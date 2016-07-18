@@ -1,0 +1,13 @@
+# ----------[ Application ]----------------------------------------
+node_modules
+
+# ----------[ OS / Metadata ]----------------------------------------
+# OS X
+.DS_Store
+# Windows
+desktop.ini
+thumbs.db
+# JetBrains
+.idea
+# VS Code
+.vscode
