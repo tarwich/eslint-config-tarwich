@@ -9,8 +9,8 @@ const jsDocRules = {
 };
 
 module.exports = {
-  extends:         'google',
-  rules:           {
+  extends: 'google',
+  rules:   {
     'brace-style':          ['error', 'stroustrup'],
     'comma-dangle':         ['error', 'only-multiline'],
     'curly':                ['error', 'multi-or-nest'],
