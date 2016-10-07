@@ -2,9 +2,9 @@
 
 const jsDocRules = {
   require: {
+    ClassDeclaration:    true,
     FunctionDeclaration: true,
     MethodDefinition:    true,
-    ClassDeclaration:    true,
   }
 };
 
@@ -26,12 +26,12 @@ module.exports = {
     'max-len':              ['error', lengthOptions],
     'no-floating-decimal':  'error',
     'no-multi-spaces':      ['off'],
-    'no-use-before-define': ['error', {functions: true, classes: true}],
+    'no-use-before-define': ['error', {classes: true, functions: true}],
     'no-var':               ['error'],
     'no-warning-comments':  ['error', {terms: ['fixme']}],
     'quotes':               ['error', 'single'],
     'require-jsdoc':        ['error', jsDocRules],
-    'sort-keys':            ['error', {caseSensitive: true}],
-    'valid-jsdoc':          ['error', {requireReturn: false, natural: true}],
+    'sort-keys':            ['error', 'asc', {caseSensitive: true, natural: true}],
+    'valid-jsdoc':          ['error', {requireReturn: false}],
   },
 };
