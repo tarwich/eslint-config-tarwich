@@ -27,6 +27,7 @@ module.exports = {
     'max-len':              ['error', lengthOptions],
     'no-floating-decimal':  'error',
     'no-multi-spaces':      ['off'],
+    'no-unused-vars':       ['error', {'after-used': true}],
     'no-use-before-define': ['error', {classes: true, functions: true}],
     'no-var':               ['error'],
     'no-warning-comments':  ['error', {terms: ['fixme']}],
