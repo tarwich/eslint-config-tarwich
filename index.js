@@ -21,6 +21,7 @@ module.exports = {
     'camelcase':            ['error', {properties: 'never'}],
     'comma-dangle':         ['error', 'only-multiline'],
     'curly':                ['error', 'multi-or-nest'],
+    'guard-for-in':         'error',
     'indent':               ['error', 2, {MemberExpression: 0}],
     'key-spacing':          ['error', {align: 'value'}],
     'max-len':              ['error', lengthOptions],
