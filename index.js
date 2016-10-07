@@ -8,22 +8,30 @@ const jsDocRules = {
   }
 };
 
+const lengthOptions = {
+  code:           120,
+  ignoreComments: true,
+  ignorePattern:  '=\\s*\\/'
+};
+
 module.exports = {
   extends: 'google',
   rules:   {
     'brace-style':          ['error', 'stroustrup'],
+    'camelcase':            ['error', {properties: 'never'}],
     'comma-dangle':         ['error', 'only-multiline'],
     'curly':                ['error', 'multi-or-nest'],
-    'indent':               ['error', 2],
+    'indent':               ['error', 2, {MemberExpression: 0}],
     'key-spacing':          ['error', {align: 'value'}],
-    'max-len':              ['error', 100],
+    'max-len':              ['error', lengthOptions],
     'no-floating-decimal':  'error',
     'no-multi-spaces':      ['off'],
     'no-use-before-define': ['error', {functions: true, classes: true}],
     'no-var':               ['error'],
     'no-warning-comments':  ['error', {terms: ['fixme']}],
-    'require-jsdoc':        ['error', jsDocRules],
     'quotes':               ['error', 'single'],
-    'valid-jsdoc':          ['error', {requireReturn: false}],
+    'require-jsdoc':        ['error', jsDocRules],
+    'sort-keys':            ['error', {caseSensitive: true}],
+    'valid-jsdoc':          ['error', {requireReturn: false, natural: true}],
   },
 };

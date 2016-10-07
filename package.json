@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/tarwich/eslint-config-tarwich#readme",
   "dependencies": {
-    "eslint": "^3.1.1",
+    "eslint": "^3.7.1",
     "eslint-config-google": "^0.6.0"
   }
 }
