@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tarwich",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "My eslint configuration",
   "main": "index.js",
   "scripts": {},
@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/tarwich/eslint-config-tarwich#readme",
   "dependencies": {
-    "eslint": "^3.7.1",
+    "eslint": "^3.9.1",
     "eslint-config-google": "^0.6.0"
   }
 }
