@@ -33,7 +33,7 @@ module.exports = {
     'no-warning-comments':  ['error', {terms: ['fixme']}],
     'quotes':               ['error', 'single'],
     'require-jsdoc':        ['error', jsDocRules],
-    'sort-keys':            ['error', 'asc', {caseSensitive: true, natural: true}],
+    'sort-keys':            ['warn',  'asc', {caseSensitive: true, natural: true}],
     'valid-jsdoc':          ['error', {requireReturn: false}],
   },
 };
