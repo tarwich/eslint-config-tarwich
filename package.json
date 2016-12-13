@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tarwich",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "My eslint configuration",
   "main": "index.js",
   "scripts": {},
