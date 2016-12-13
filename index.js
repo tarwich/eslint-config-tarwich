@@ -23,7 +23,7 @@ module.exports = {
     'curly':                ['error', 'multi-or-nest'],
     'guard-for-in':         'error',
     'indent':               ['error', 2, {MemberExpression: 0, SwitchCase: 1}],
-    'key-spacing':          ['error', {align: 'value'}],
+    'key-spacing':          ['off', {align: 'value'}],
     'max-len':              ['error', lengthOptions],
     'no-floating-decimal':  'error',
     'no-multi-spaces':      ['off'],
@@ -33,7 +33,7 @@ module.exports = {
     'no-warning-comments':  ['error', {terms: ['fixme']}],
     'quotes':               ['error', 'single'],
     'require-jsdoc':        ['error', jsDocRules],
-    'sort-keys':            ['warn',  'asc', {caseSensitive: true, natural: true}],
+    'sort-keys':            ['off', 'asc', {caseSensitive: true, natural: true}],
     'valid-jsdoc':          ['error', {requireReturn: false}],
   },
 };
