@@ -18,5 +18,8 @@
   "dependencies": {
     "eslint": "^3.9.1",
     "eslint-config-google": "^0.6.0"
+  },
+  "devDependencies": {
+    "co": "^4.6.0"
   }
 }
