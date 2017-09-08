@@ -14,47 +14,17 @@ const lengthOptions = {
   ignorePattern:  '=\\s*\\/'
 };
 
+const INDENT_RULES = {
+  MemberExpression: 0,
+  SwitchCase: 1,
+};
+
 module.exports = {
   rules: {
-  	//Our Rules---------------------------------------------
-
-  	'brace-style':          ['error', 'stroustrup'],
-    'comma-dangle':         ['error', 'only-multiline'],
-    'curly':                ['error', 'multi-or-nest'],
-    'indent':               ['error', 2],
-    'key-spacing':          ['error', {align: 'value'}],
-    'max-len':              ['error', 100],
-    'no-floating-decimal':  'error',
-    'no-multi-spaces':      ['off'],
-    'no-use-before-define': ['error', {functions: true, classes: true}],
-    'no-var':               ['error'],
-    'no-warning-comments':  ['error', {terms: ['fixme']}],
-    'require-jsdoc':        ['error', jsDocRules],
-    'quotes':               ['error', 'single'],
-    'valid-jsdoc':          ['error', {requireReturn: false}],
-
-  	//Google Rules----------------------------------------------
-
-  	'indent': [2, 2, {
-      SwitchCase: 1
-    }],
-    'space-before-function-paren': [2, 'never'],
-    'valid-jsdoc': [2, {
-      requireReturn: false,
-      prefer: {
-        returns: 'return'
-      }
-    }],
-    'require-jsdoc': 1,
-    'max-len': [1, 80, 4, {
-      ignoreComments: true,
-      ignoreUrls: true
-    }],
 
   	//XO Rules--------------------------------------------------
 
     // Possible Errors
-    'comma-dangle': [2, 'never'],
     'no-cond-assign': 2,
     'no-constant-condition': 2,
     'no-control-regex': 2,
@@ -89,7 +59,6 @@ module.exports = {
     'accessor-pairs': 2,
     'array-callback-return': 2,
     'block-scoped-var': 2,
-    'curly': 2,
     'default-case': 2,
     'dot-notation': 2,
     'dot-location': [2, 'property'],
@@ -107,7 +76,6 @@ module.exports = {
     'no-extra-bind': 2,
     'no-extra-label': 2,
     'no-fallthrough': 2,
-    'no-floating-decimal': 2,
     'no-implicit-coercion': 2,
     'no-implicit-globals': 2,
     'no-implied-eval': 2,
@@ -119,7 +87,6 @@ module.exports = {
     // disabled because of https://github.com/eslint/eslint/issues/4236
     // 'no-magic-numbers': [1, {ignore: [-1, 0, 1, 60, 1000], detectObjects: true}],
 
-    'no-multi-spaces': 2,
     'no-multi-str': 2,
     'no-native-reassign': 2,
     'no-new-func': 2,
@@ -141,7 +108,6 @@ module.exports = {
     'no-useless-call': 2,
     'no-useless-concat': 2,
     'no-void': 2,
-    'no-warning-comments': 1,
     'no-with': 2,
     'radix': 2,
     'wrap-iife': [2, 'inside'],
@@ -158,7 +124,6 @@ module.exports = {
     'no-undef-init': 2,
     'no-undef': [2, {typeof: true}],
     'no-unused-vars': 2,
-    'no-use-before-define': [2, 'nofunc'],
 
     // Node.js
 
@@ -174,15 +139,12 @@ module.exports = {
 
     // Stylistic Issues
     'array-bracket-spacing': [2, 'never'],
-    'brace-style': [2, '1tbs', {allowSingleLine: false}],
     'camelcase': [2, {properties: 'always'}],
     'comma-spacing': [2, {before: false, after: true}],
     'comma-style': [2, 'last'],
     'computed-property-spacing': [2, 'never'],
     'eol-last': 2,
-    'indent': [2, 'tab', {SwitchCase: 1}],
     'jsx-quotes': 2,
-    'key-spacing': [2, {beforeColon: false, afterColon: true}],
     'keyword-spacing': 2,
     'linebreak-style': [2, 'unix'],
     'max-nested-callbacks': [1, 4],
@@ -230,6 +192,38 @@ module.exports = {
     'no-this-before-super': 2,
     'no-useless-constructor': 2,
     'template-curly-spacing': 2,
-    'yield-star-spacing': [2, 'both']
+    'yield-star-spacing': [2, 'both'],
+
+    //Google Rules----------------------------------------------
+
+    'space-before-function-paren': [2, 'never'],
+
+    //Our Rules---------------------------------------------
+
+  	'brace-style':          ['error', 'stroustrup', {allowSingleLine: false}],
+    'comma-dangle':         ['error', 'only-multiline'],
+    'curly': ['error', 'multi-or-nest'],
+    // 'indent': ['error', 2, 'tab', {
+    //   SwitchCase: 1
+    // }],
+    'indent': ['error', 2, 'tab', INDENT_RULES],
+    'key-spacing': [2, {align: 'value', beforeColon: false, afterColon: true}],
+    'max-len':              ['error', 100, 80, 4, {
+      ignoreComments: true,
+      ignoreUrls: true
+    }],
+    'no-floating-decimal':  'error',
+    'no-multi-spaces':      ['error'],
+    'no-use-before-define': ['error', {functions: true, classes: true}],
+    'no-var':               ['error'],
+    'no-warning-comments':  ['error', {terms: ['fixme']}],
+    'require-jsdoc':        ['error', jsDocRules],
+    'quotes':               ['error', 'single'],
+    'valid-jsdoc':          ['error', {
+      requireReturn: false,
+      prefer: {
+        returns: 'return'
+      }
+    }],
   }
 };
