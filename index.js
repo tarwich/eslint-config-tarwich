@@ -17,6 +17,7 @@ const lengthOptions = {
 const INDENT_RULES = {
   MemberExpression: 0,
   SwitchCase: 1,
+  // tab?
 };
 
 module.exports = {
@@ -203,12 +204,9 @@ module.exports = {
   	'brace-style':          ['error', 'stroustrup', {allowSingleLine: false}],
     'comma-dangle':         ['error', 'only-multiline'],
     'curly': ['error', 'multi-or-nest'],
-    // 'indent': ['error', 2, 'tab', {
-    //   SwitchCase: 1
-    // }],
-    'indent': ['error', 2, 'tab', INDENT_RULES],
+    'indent': ['error', 2, INDENT_RULES],
     'key-spacing': [2, {align: 'value', beforeColon: false, afterColon: true}],
-    'max-len':              ['error', 100, 80, 4, {
+    'max-len':              ['error', 100, 4, {
       ignoreComments: true,
       ignoreUrls: true
     }],

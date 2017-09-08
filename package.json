@@ -6,15 +6,15 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tarwich/eslint-config-tarwich.git"
+    "url": "git+https://github.com/voidrayco/eslint-config-voidray.git"
   },
   "keywords": [],
   "author": "Samuel Dillow",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tarwich/eslint-config-tarwich/issues"
+    "url": "https://github.com/voidrayco/eslint-config-voidray/issues"
   },
-  "homepage": "https://github.com/tarwich/eslint-config-tarwich#readme",
+  "homepage": "https://github.com/voidrayco/eslint-config-voidray#readme",
   "dependencies": {
     "eslint": "^3.9.1",
     "eslint-config-google": "^0.6.0"
