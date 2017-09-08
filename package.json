@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-tarwich",
+  "name": "eslint-config-voidray",
   "version": "1.5.1",
   "description": "My eslint configuration",
   "main": "index.js",
