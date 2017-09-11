@@ -169,7 +169,7 @@ module.exports = {
     'no-spaced-func':                2,
     'no-trailing-spaces':            2,
     'no-unneeded-ternary':           2,
-    'object-curly-spacing':          [2, 'never'],
+    'object-curly-spacing':          [2, 'always'],
     'one-var':                       [2, 'never'],
     'one-var-declaration-per-line':  2,
     'operator-assignment':           [2, 'always'],
@@ -210,7 +210,7 @@ module.exports = {
     'comma-dangle': ['error', 'only-multiline'],
     'curly':        ['error', 'multi-or-nest'],
     'indent':       ['error', 2, INDENT_RULES],
-    'key-spacing':  [2, {align: 'value', beforeColon: false, afterColon: true}],
+    'key-spacing':  [2, {mode: 'strict', beforeColon: false, afterColon: true}],
     'max-len':      ['error', 100, 4, {
       ignoreComments: true,
       ignoreUrls:     true
@@ -220,6 +220,7 @@ module.exports = {
     'no-use-before-define': ['error', {functions: true, classes: true}],
     'no-var':               ['error'],
     'no-warning-comments':  ['error', {terms: ['fixme']}],
+    'prefer-const':         2,
     'require-jsdoc':        ['error', jsDocRules],
     'quotes':               ['error', 'single'],
     'valid-jsdoc':          ['error', {
