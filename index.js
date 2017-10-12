@@ -218,7 +218,7 @@ module.exports = {
     'no-use-before-define': ['error', { functions: true, classes: true }],
     'no-var': ['error'],
     'no-warning-comments': ['error', { terms: ['fixme'] }],
-    'prefer-const': 2,
+    'prefer-const': ['error'],
     'require-jsdoc': ['error', jsDocRules],
     'quotes': ['error', 'single'],
     'valid-jsdoc': ['error', {
