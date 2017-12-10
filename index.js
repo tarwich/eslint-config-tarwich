@@ -145,7 +145,9 @@ module.exports = {
 
     // Stylistic Issues
     'array-bracket-spacing': [2, 'never'],
-    'camelcase': [2, { properties: 'always' }],
+    /** The reason we're setting properties: never is to allow for calling APIs
+     * that don't support camelcase */
+    'camelcase': [2, { properties: 'never' }],
     'comma-spacing': [2, { before: false, after: true }],
     'comma-style': [2, 'last'],
     'computed-property-spacing': [2, 'never'],
