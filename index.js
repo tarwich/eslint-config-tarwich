@@ -222,9 +222,9 @@ module.exports = {
     'no-var': ['error'],
     'no-warning-comments': ['error', { terms: ['fixme'] }],
     'prefer-const': ['error'],
-    'require-jsdoc': ['error', jsDocRules],
+    'require-jsdoc': ['off', jsDocRules],
     'quotes': ['error', 'single'],
-    'valid-jsdoc': ['error', {
+    'valid-jsdoc': ['warn', {
       requireReturn: false,
       prefer: {
         returns: 'return'
