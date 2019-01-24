@@ -224,7 +224,7 @@ module.exports = {
     'prefer-const': ['error'],
     'require-jsdoc': ['off', jsDocRules],
     'quotes': ['error', 'single'],
-    'valid-jsdoc': ['warn', {
+    'valid-jsdoc': ['off', {
       requireReturn: false,
       prefer: {
         returns: 'return'
