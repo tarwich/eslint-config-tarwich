@@ -32,6 +32,16 @@ module.exports = {
 };
 ````
 
+Alternatively you can edit your package.json and add the following:
+
+Read more: https://eslint.org/docs/user-guide/configuring#specifying-environments
+
+```json
+  "eslintConfig": {
+    "extends": "eslint-config-tarwich"
+  }
+```
+
 Please [let me know] if any rules don't make sense. I'm always learning from the
 community. It's easy to make rules that work for me without realizing the larger
 implication of a different rule.
